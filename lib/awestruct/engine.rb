@@ -123,7 +123,7 @@ module Awestruct
 
     def load_site_yaml(yaml_path, profile = nil)
       if ( File.exist?( yaml_path ) )
-        data = YAML.load( File.read( yaml_path ) )
+        data = YAML.load( File.read( yaml_path, :encoding => 'bom|utf-8' ) )
         if ( profile )
           site.interpolate = true
           profile_data = {}
