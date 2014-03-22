@@ -14,6 +14,7 @@ profiles:
     compass_output_style: :compact
 
 title: Awestruction!
+intl_name: Internéšnl
 
 asciidoctor:
   :safe: 0
